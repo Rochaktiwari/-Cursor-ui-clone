@@ -1,0 +1,587 @@
+:root {
+    --black: #14120b;
+    --black-secondary: #1b1913;
+    --black-hover: #1d1b15;
+    --black-border: #2b2923;
+    --white: #d7d6d5;
+    --white-2: #edecec;
+    --orange: #bf4105;
+    --white-text: #edecec;
+    --white-text-secondary: #9A9996;
+    --link-text-color: #BF4105;
+}
+
+@font-face {
+    font-family: CursorGothic;
+    src: url('./Resources/CursorGothic-main/fonts/CursorGothic-Regular.woff2') format('woff2');
+    font-display: swap;
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: CursorGothic;
+    src: url('./Resources/CursorGothic-main/fonts/CursorGothic-Italic.woff2') format('woff2');
+    font-display: swap;
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: CursorGothic;
+    src: url('./Resources/CursorGothic-main/fonts/CursorGothic-Bold.woff2') format('woff2');
+    font-display: swap;
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: CursorGothic;
+    src: url('./Resources/CursorGothic-main/fonts/CursorGothic-BoldItalic.woff2') format('woff2');
+    font-display: swap;
+    font-weight: 700;
+    font-style: italic;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.blackHover {
+    cursor: pointer;
+    background-color: var(--black-hover);
+}
+
+
+body {
+    color: var(--white-text);
+    background-color: var(--black);
+    font-family: "CursorGothic";
+}
+
+
+
+#bigCont {
+    width: 90%;
+    height: auto;
+    margin: auto;
+
+}
+
+#navMainBody {
+    height: 50px;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+}
+
+header {
+    background-color: #14120b;
+    position: sticky;
+    top: 0;
+}
+
+.logo {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    align-items: center;
+}
+
+.navLinks {
+
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    list-style-type: none;
+}
+
+.navCTA {
+    margin: auto;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.signBtn {
+    all: unset;
+    padding: 3px 5px 3px 5px;
+    width: 70px;
+    text-align: center;
+    font-size: 1rem;
+    border: 1px solid #b3b3b3;
+    border-radius: 50px;
+}
+
+.downloadBtn {
+    all: unset;
+    padding: 3px 7px 3px 7px;
+    width: 70px;
+    color: black;
+    background-color: var(--white-text);
+    font-size: 1rem;
+    text-align: center;
+    border: 1px solid white;
+    border-radius: 50px;
+}
+
+
+
+#heroCont {
+    line-height: 2rem;
+}
+
+.heroDesc {
+    margin: 8% 0 15px 15px;
+    width: 40%;
+    font-size: 1.7rem;
+
+}
+
+.heroBtn {
+    all: unset;
+    margin: 0 0 65px 15px;
+    padding: 5px 15px 5px 15px;
+    width: 200px;
+    font-weight: lighter;
+    font-size: 0.80;
+    letter-spacing: 0.25px;
+    color: black;
+    background-color: var(--white-text);
+    text-align: center;
+    border-radius: 50px;
+}
+
+.heroImg img {
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+}
+
+#trustedSection {
+    margin-top: 5%;
+    margin-bottom: 3%;
+}
+
+div.trustText {
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: center;
+}
+
+#compCard {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
+}
+
+.compCard1 {
+    margin: auto;
+    width: 250px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    background-color: var(--black-secondary);
+}
+
+#featureSection {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.featureCol1 {
+    margin-top: 6%;
+
+    width: 100%;
+    height: 685px;
+
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    background-color: var(--black-secondary);
+    border-radius: 5px;
+}
+
+.featureTxt {
+    margin: 0 0 0 15px;
+    padding: 5px;
+    width: 450px;
+    display: flex;
+    font-size: 1.6rem;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.featureImg {
+    margin: 15px;
+    width: 850px;
+    height: 650px;
+    justify-content: center;
+    align-items: center;
+}
+
+.blockImg {
+    width: 100%;
+    object-fit: cover;
+}
+
+.featureCol2 {
+    margin-top: 6%;
+    width: 100%;
+    height: 685px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    gap: 10px;
+    background-color: var(--black-secondary);
+    border-radius: 5px;
+}
+
+.featureTxt {
+    margin: auto;
+    padding: 5px;
+    width: 450px;
+    display: flex;
+    font-size: 1.6rem;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.featureImg {
+    margin: 15px;
+    width: 850px;
+    height: 650px;
+    justify-content: center;
+    align-items: center;
+}
+
+.blockImg {
+    width: 100%;
+    object-fit: cover;
+}
+
+
+.featureCol3 {
+    margin-top: 6%;
+    width: 100%;
+    height: 685px;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    background-color: var(--black-secondary);
+    border-radius: 5px;
+}
+
+.featureTxt {
+    margin: 0 0 0 15px;
+    padding: 5px;
+    width: 450px;
+    display: flex;
+    font-size: 1.6rem;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.featureImg {
+    margin: 15px;
+    width: 850px;
+    height: 650px;
+    justify-content: center;
+    align-items: center;
+}
+
+.blockImg {
+    width: 100%;
+    object-fit: cover;
+}
+
+#testimonalsSection {
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+}
+
+.testiHead {
+    margin-bottom: 3%;
+    display: flex;
+    justify-content: center;
+    font-size: 2.5rem;
+}
+
+.testiCardRow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+}
+
+.testiCard {
+    margin: 5px;
+    padding: 20px;
+    width: 400px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: var(--black-secondary);
+
+    border-radius: 5px;
+}
+
+.testCardUser {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
+
+#storySection {
+    margin-top: 10%;
+}
+
+.storyHead {
+    margin: 0 0 25px 0;
+    font-size: 1.5rem;
+}
+
+
+
+.storyCardRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 5px;
+}
+
+.storyCard {
+    width: 440px;
+    height: 550px;
+    background-color: var(--black-secondary);
+    border-radius: 5px;
+}
+
+.storyCardTxt {
+
+    margin: 15px;
+    width: 400px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 3px;
+
+}
+
+.storyCardImg {
+    margin: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.storyCardImg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+#changelogSection {
+    margin-top: 10%;
+}
+
+.logHead {
+    margin: 0 0 25px 0;
+
+    font-size: 1.5rem;
+}
+
+
+
+.logCardRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 5px;
+}
+
+.logCard {
+    width: 300px;
+    height: 100px;
+
+    padding: 15px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+
+    background-color: var(--black-secondary);
+    border-radius: 5px;
+}
+
+.logCardHead span {
+    padding: 0px 5px 0px 5px;
+    margin-right: 10px;
+    width: 60px;
+    height: 20px;
+    border: 1px solid var(--white-text-secondary);
+    border-radius: 20px;
+}
+
+.logLink {
+    margin-top: 20px;
+    color: var(--link-text-color);
+}
+
+#teamSection {
+    margin-top: 10%;
+}
+
+.teamHead {
+    margin-bottom: 25px;
+
+    width: 810px;
+    height: 86px;
+
+    font-size: 2.5rem;
+}
+
+.teamBtn {
+    margin: 3% 0px 5% 5px;
+}
+
+.teambtn {
+    all: unset;
+
+    padding: 10px;
+
+    font-size: 1.2rem;
+    color: var(--black);
+    background-color: var(--white);
+    border-radius: 25px;
+    font-weight: 200;
+}
+
+.teamImg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#teamMainCont {
+    margin-top: 10%;
+    padding: 80px;
+    background-color: var(--black-secondary);
+    display: flex;
+    justify-content: center;
+}
+
+.teamHighlightComp {
+    padding: 20px;
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+}
+
+.recentHigh {
+    padding: 20px;
+    width: 300px;
+    height: 430px;
+    display: flex;
+    position: sticky;
+    top: 100;
+    border: 2px dashed white;
+}
+
+
+.teamCardRow {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+
+}
+
+
+.teamCard {
+    padding: 15px;
+    width: 600px;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #201E18;
+    border-radius: 5px;
+}
+
+#finalCTA {
+
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.bigHeading {
+    font-size: 4rem;
+}
+
+.finalBtn {
+    all: unset;
+    padding: 5px 10px 5px 10px;
+    width: 200px;
+    height: 40px;
+    text-align: center;
+    border-radius: 20px;
+    color: var(--black);
+    background-color: var(--white);
+
+}
+
+
+#footerSection {
+    padding: 70px 80px 30px;
+    background-color: var(--black-secondary);
+}
+
+.footRow {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 60px;
+    margin-bottom: 60px;
+}
+
+.footRow div li:first-child {
+    color: var(--white-text-secondary);
+}
+
+.footRow li {
+    list-style: none;
+    margin-bottom: 12px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.footfinalComp {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
+    font-size: 14px;
+    color: var(--white-text-secondary);
+}
